@@ -1,0 +1,131 @@
+@page {
+    size: A4;
+    margin: 20mm;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.recibo {
+    background-color: white;
+    width: 100%;
+    max-width: 210mm; /* Ancho máximo de A4 */
+    height: auto;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    padding: 20mm;
+    box-sizing: border-box;
+    page-break-inside: avoid;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.empresa-info {
+    text-align: left;
+}
+
+.recibo-info {
+    text-align: right;
+}
+
+.logo {
+    width: 150px;
+}
+
+.header-info h1 {
+    color: orange;
+    font-size: 24px;
+    margin: 0;
+}
+
+.cliente-info, .metodos-pago, .footer {
+    margin: 20px 0;
+}
+
+.cliente-info h2, .metodos-pago h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.tabla-cliente {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.tabla-cliente th {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.tabla-cliente td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+
+.plan-info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.plan-info th, .plan-info td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+
+.plan-info th {
+    background-color: #f2f2f2;
+}
+
+.pago-totales {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.metodos-pago {
+    width: 60%;
+}
+
+.pago-logo {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.totales {
+    width: 35%;
+    text-align: right;
+}
+
+.totales table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.totales td {
+    border: 1px solid #000;
+    padding: 8px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
